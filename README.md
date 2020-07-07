@@ -1,29 +1,10 @@
-# hsd-dashboard
+# HsdEngine DashBoard
 
-## Project setup
-```
-yarn install
-```
+## 가본 셋팅
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+- [x] vue-rotuer 설치
+- [x] vuex 설치
+- [x] eslint+prettier
+- [x] jest
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 라이브러리
