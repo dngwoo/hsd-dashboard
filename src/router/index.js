@@ -10,8 +10,12 @@ const router = new VueRouter({
 			redirect: '/main',
 		},
 		{
-			path: '/main',
+			path: '/home',
 			component: () => import('@/views/ShipHomePage.vue'),
+		},
+		{
+			path: '/main',
+			component: () => import('@/views/ShipMainPage.vue'),
 		},
 	],
 });

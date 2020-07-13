@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<template v-if="isLocation">
+		<template v-if="!isLocation">
 			<control-bar></control-bar>
 			<header-bar></header-bar>
 			<status-bar></status-bar>
@@ -25,7 +25,7 @@ export default {
 	},
 	computed: {
 		isLocation() {
-			return this.$route.path === '/main' ? true : false;
+			return this.$route.path === '/home' ? true : false;
 		},
 	},
 };
