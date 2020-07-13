@@ -1,17 +1,51 @@
 @import './variables';
 @import './reset';
 @import './location';
+@import './bottom-bar';
+
+*{
+	box-sizing: border-box;
+}
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: $f5;
-    background-color: $mainColor;
-    
+	font-family: $font-family-sans-serif;
+	margin: 0;
+    cursor: default; /* 커서를 없애준다. 텍스트에도 반응하기 때문에 없애준다 */
+	font-size: $font-micro;
+	background-color: $color-darker;
+	padding: $padding-micro;
 }
 
 a{
-    color: $dark;
-    text-decoration: none;
+	text-decoration: none;
+	color: $color-white;
 }
 
+/* Typography <- 텍스트와 관련된 것들 */
+h1{
+	font-size: $font-large;
+	font-weight: $weight-bold;
+	color: $color-black;
+	margin: 16px 0px; /* 원래는 32px로 들어가져 있음 */
+}
 
+h2{
+	font-size: $font-medium;
+	font-weight: $weight-semi-bold;
+	color: $color-black;
+	margin: 8px 0;
+}
+
+h3{
+	font-size: $font-regular;
+	font-weight: $weight-regular;
+	color: $color-black;
+	margin: 8px 0;
+}
+
+p{
+	font-size: $font-regular;
+	font-weight: $weight-regular;
+	color: $color-black;
+	margin: 4px 0;
+}

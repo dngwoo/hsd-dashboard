@@ -2,21 +2,21 @@
     .location__map{
         width: 100%;
         height: 60vh;
-        margin-bottom: 30px;
+        margin-bottom: $margin-regular;
     }
-    padding:$paddingSmall;
+    padding:$padding-regular;
     .location__wrapper{
         width:100%; 
         overflow-x: auto;
         overflow-y: hidden;
         .location__table{
             width: 100%;
-            min-width: 1500px;
+            min-width: 1440px;
             border-collapse: separate;
             border-spacing: 5px;
             .loaction__th{
-                color: $white;
-                background-color: #42b883;
+                color: $color-white;
+                background-color: $color-vue;
                 border: 1px solid black;
                 text-align: center;
                 padding: 10px 3px;
@@ -25,8 +25,8 @@
             .location__td{
                 border: 1px solid black;
                 text-align: center;
-                background-color: $white;
-                color: $gray-dark;
+                background-color: $color-white;
+                color: $color-gray-dark;
             }
             .location__th--first{
                 border:none;

@@ -7,46 +7,11 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/',
-			redirect: '/location',
+			redirect: '/main',
 		},
 		{
-			path: '/login',
-			component: () => import('@/views/LoginPage.vue'),
-		},
-		{
-			path: '/location',
-			component: () => import('@/views/ShipLocationPage.vue'),
-			meta: { auth: true },
-		},
-		{
-			path: '/info',
-			component: () => import('@/views/ShipInfoPage.vue'),
-			meta: { auth: true },
-		},
-		{
-			path: '/control',
-			component: () => import('@/views/ShipControlPage.vue'),
-			meta: { auth: true },
-		},
-		{
-			path: '/trend',
-			component: () => import('@/views/ShipTrendPage.vue'),
-			meta: { auth: true },
-		},
-		{
-			path: '/alarm',
-			component: () => import('@/views/ShipAlarmPage.vue'),
-			meta: { auth: true },
-		},
-		{
-			path: '/log',
-			component: () => import('@/views/ShipEventLogPage.vue'),
-			meta: { auth: true },
-		},
-		{
-			path: '/maintenance',
-			component: () => import('@/views/ShipMaintenance.vue'),
-			meta: { auth: true },
+			path: '/main',
+			component: () => import('@/views/ShipHomePage.vue'),
 		},
 	],
 });

@@ -1,0 +1,42 @@
+.bottom-bar {
+	display: flex;
+	width: 100%;
+	background: $gredient-vue;
+	border-radius: $size-border-radius;
+}
+.bottom-bar__link {
+	display: block;
+	width: 12.5%;
+	text-align: center;
+	color: $color-white;
+	height: 60px;
+	line-height: 60px;
+    opacity: 0.7;
+    font-weight: $weight-bold;
+	overflow-x: scroll;
+	transition: color $animation-duration linear;
+	&:hover {
+		color: black;
+    }
+    &:active{
+        transform: scale(.9)
+    }
+}
+
+@media screen and (min-width: 1000px) {
+	.bottom-bar {
+		background: transparent;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.bottom-bar__link {
+		border: 0.5px solid grey;
+		margin-right: $margin-micro;
+		border-radius: $size-border-radius;
+		background-color: $color-button;
+		box-shadow: 2px 2px 2px $color-white inset;
+		&:hover {
+			color: $color-white;
+		}
+	}
+}

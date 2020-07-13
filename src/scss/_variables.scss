@@ -1,65 +1,71 @@
+/* global set up */
 
 /* color */
-$mainColor:#1E1E2E;
-$focusMenu: #f3f2f1;
-$black: #2c2c2c;
-$white: #fff;
-$blue: #5e72e4;
-$indigo: #5603ad;
-$purple: #8965e0;
-$pink: #f3a4b5;
-$red: #f5365c;
-$orange: #fb6340;
-$yellow: #ffd600;
-$green: #2dce89;
-$teal: #11cdef;
-$cyan: #2bffc6;
-$gray: #6c757d;
-$gray-dark: #32325d;
-$light: #ced4da;
-$lighter: #e9ecef;
-$primary: #e14eca;
-$secondary: #f4f5f7;
-$success: #00f2c3;
-$info: #1d8cf8;
-$warning: #ff8d72;
-$danger: #fd5d93;
-$light: #adb5bd;
-$dark: #212529;
-$default: #344675;
-$darker: #000;
+$color-black: #2c2c2c;
+$color-white: #fff;
+$color-blue: #5e72e4;
+$color-indigo: #5603ad;
+$color-purple: #8965e0;
+$color-pink: #f3a4b5;
+$color-red: #f5365c;
+$color-orange: #fb6340;
+$color-yellow: #ffd600;
+$color-green: #2dce89;
+$color-teal: #11cdef;
+$color-cyan: #2bffc6;
+$color-gray: #6c757d;
+$color-gray-dark: #32325d;
+$color-light: #ced4da;
+$color-lighter: #e9ecef;
+$color-primary: #e14eca;
+$color-secondary: #f4f5f7;
+$color-success: #00f2c3;
+$color-info: #1d8cf8;
+$color-warning: #ff8d72;
+$color-danger: #fd5d93;
+$color-light: #adb5bd;
+$color-dark: #212529;
+$color-default: #344675;
+$color-darker: #000;
 
-/* padding */
-$paddingLarge: 100px;
-$paddingBig: 50px;
-$paddingMedium: 30px;
-$paddingSmall: 15px;
-$paddingBase: 10px;
+/* custom color */
+$color-button: #191a1d;
+$color-vue: #42b883;
 
-/* margin */
-$marginLarge: 100px;
-$marginBig: 50px;
-$marginMedium: 30px;
-$marginSmall: 15px;
-$marginBase: 10px;
+/* gredient */
+$gredient-vue: linear-gradient(0deg, #0098f0, #00f2c3);
 
 /* font-size */
-$f1: 32px;
-$f2: 28px;
-$f3: 24px;
-$f4: 16px;
-$f5: 14px;
+$font-large: 48px;
+$font-medium: 28px;
+$font-regular: 18px;
+$font-small: 16px;
+$font-micro: 14px;
 
-/* box-shadow */
-$boxShadow1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-$boxShadow2: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-$boxShadow2Hover: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-$boxShadow3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-$boxShadow4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-$boxShadow5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-$boxShadow6: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-/* blackdashboard */
-$boxShadow7: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+/* margin */
+$margin-large: 100px;
+$margin-medium: 50px;
+$margin-regular: 30px;
+$margin-small: 15px;
+$margin-micro: 10px;
+
+/* padding */
+$padding-large: 100px;
+$padding-medium: 50px;
+$padding-regular: 30px;
+$padding-small: 15px;
+$padding-micro: 10px;
+
+/* font-weight */
+$weight-bold: 700;
+$weight-semi-bold: 600;
+$weight-regular: 400;
+
+/* size */
+$size-border-radius: 4px;
+
+/* Animation */
+$animation-duration: 250ms;
 
 /* media */
 $breakpoint-xs: 0;
@@ -67,8 +73,22 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+
+/* font-family */
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+"Liberation Mono", "Courier New", monospace;
+
+/* box shadow */
+$box-shadow-base : 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$box-shadow-small : 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 1 0px rgba(0, 0, 0, 0.22);
+$box-shadow-small-hover: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$box-shadow-medium : 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$box-shadow-big : 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+$box-shadow-large : 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+$box-shadow-largest : 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+$box-shadow-modal: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+
+
